@@ -31,7 +31,7 @@ with open('Yoshi.bmp', "rb") as f:
     face = displayio.TileGrid(odb, pixel_shader=displayio.ColorConverter(), x=0, y=0)
     splash.append(face)
     # Wait for the image to load.
-    board.DISPLAY.wait_for_frame()
+    board.DISPLAY.refresh()
 
 audio.play(wave)
 
